@@ -1,0 +1,232 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A8B8872-7A70-4282-9FFF-25C7453EE457}|..\\AdminUserAPI.Infrastructure\\AdminUserAPI.Infrastructure.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.infrastructure\\implementation\\adminuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.core\\dtos\\adminuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi\\migrations\\20240707223519_initialmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:migrations\\20240707223519_initialmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.core\\entities\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A8B8872-7A70-4282-9FFF-25C7453EE457}|..\\AdminUserAPI.Infrastructure\\AdminUserAPI.Infrastructure.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.infrastructure\\data\\adminuserdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.core\\dtos\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.core\\interfaces\\iadminuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi.core\\interfaces\\iadminuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divya\\onedrive\\desktop\\projects\\angular projects\\assignments\\adminuserapp\\adminuserapi\\migrations\\20240707223519_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:migrations\\20240707223519_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Mappings\\MappingProfile.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAawAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T23:02:06.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240707223519_InitialMigration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Migrations\\20240707223519_InitialMigration.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240707223519_InitialMigration.Designer.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Migrations\\20240707223519_InitialMigration.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240707223519_InitialMigration.Designer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T22:50:18.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:40:53.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminUserService.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:35:06.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminUserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Infrastructure\\Data\\AdminUserDbContext.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Infrastructure\\Data\\AdminUserDbContext.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Infrastructure\\Data\\AdminUserDbContext.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Infrastructure\\Data\\AdminUserDbContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:35:02.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:30:47.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:30:34.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-07T22:00:06.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminUser.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\Entities\\AdminUser.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\Entities\\AdminUser.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\Entities\\AdminUser.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Core\\Entities\\AdminUser.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:29:48.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240707223519_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Migrations\\20240707223519_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240707223519_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Migrations\\20240707223519_InitialMigration.cs",
+              "RelativeToolTip": "Migrations\\20240707223519_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T22:35:20.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminUserController.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Controllers\\AdminUserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminUserController.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI\\Controllers\\AdminUserController.cs",
+              "RelativeToolTip": "Controllers\\AdminUserController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAYwC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:30:15.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAdminUserService.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:29:56.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAdminUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
+              "ToolTip": "C:\\Users\\divya\\OneDrive\\Desktop\\Projects\\Angular Projects\\Assignments\\AdminUserApp\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T21:29:51.921Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

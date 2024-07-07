@@ -1,0 +1,17 @@
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\bin\Debug\net8.0\AdminUserAPI.Infrastructure.deps.json
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\bin\Debug\net8.0\AdminUserAPI.Infrastructure.runtimeconfig.json
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\bin\Debug\net8.0\AdminUserAPI.Infrastructure.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\bin\Debug\net8.0\AdminUserAPI.Infrastructure.pdb
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\bin\Debug\net8.0\AdminUserAPI.Core.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\bin\Debug\net8.0\AdminUserAPI.Core.pdb
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.AssemblyInfo.cs
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUse.FCD7B0EB.Up2Date
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\refint\AdminUserAPI.Infrastructure.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.pdb
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\AdminUserAPI.Infrastructure.genruntimeconfig.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Infrastructure\obj\Debug\net8.0\ref\AdminUserAPI.Infrastructure.dll

@@ -1,0 +1,14 @@
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\bin\Debug\net8.0\AdminUserAPI.Core.deps.json
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\bin\Debug\net8.0\AdminUserAPI.Core.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\bin\Debug\net8.0\AdminUserAPI.Core.pdb
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.AssemblyInfoInputs.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.AssemblyInfo.cs
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.csproj.CoreCompileInputs.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\refint\AdminUserAPI.Core.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.pdb
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\ref\AdminUserAPI.Core.dll
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\bin\Debug\net8.0\AdminUserAPI.Core.runtimeconfig.json
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.csproj.AssemblyReference.cache
+C:\Users\divya\OneDrive\Desktop\Projects\Angular Projects\Assignments\AdminUserApp\AdminUserAPI.Core\obj\Debug\net8.0\AdminUserAPI.Core.genruntimeconfig.cache
