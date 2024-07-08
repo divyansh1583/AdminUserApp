@@ -22,21 +22,15 @@ namespace AdminUserAPI.Controllers
         public async Task<IActionResult> RegisterAsync(AdminUserDto adminUserDto)
         {
             var result = await _adminUserService.RegisterUserAsync(adminUserDto);
-            if (!result.IsSuccess)
-            {
-                return BadRequest(result.Message);
-            }
-            return BadRequest(result);
+            
+            return Ok(result);
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> LoginAsync(UserLoginDto userLoginDto)
         {
             var result = await _adminUserService.LoginUserAsync(userLoginDto);
-            if (!result.IsSuccess)
-            {
-                return BadRequest(result.Message);
-            }
+    
             return Ok(result);
         }
 

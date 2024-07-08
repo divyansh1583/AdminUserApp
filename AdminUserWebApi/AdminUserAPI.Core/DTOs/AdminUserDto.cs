@@ -15,9 +15,11 @@ namespace AdminUserAPI.Core.DTOs
         public string Email { get; set; }
 
         [Required]
+        [RegularExpression(@"^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\D*\d)(?=.*[$@$!%*?&]).{6,}$")]
         public string Password { get; set; }
 
         [Required]
+        [Compare("Password")]
         public string ConfirmPassword { get; set; }
 
         [Required]

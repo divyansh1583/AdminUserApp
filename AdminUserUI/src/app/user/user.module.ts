@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import {MatSortModule} from '@angular/material/sort';
+
 import { UserRoutingModule } from './user-routing.module';
 import { ListComponent } from './list/list.component';
 
@@ -11,7 +13,8 @@ import { ListComponent } from './list/list.component';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    MatSortModule
   ]
 })
 export class UserModule { }

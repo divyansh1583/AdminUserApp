@@ -30,7 +30,10 @@ namespace AdminUserAPI.Infrastructure.Implementation
             {
                 return new ResultDto { IsSuccess = false, Message = "Cannot register more than 2 admins" };
             }
-
+            if (await _adminUserRepository.GetUserByEmailAsync(adminUserDto.Email)!=null)
+            {
+                return new ResultDto { IsSuccess = false, Message = "This email is already registered!" };
+            }
             var user = _mapper.Map<AdminUser>(adminUserDto);
             await _adminUserRepository.AddUserAsync(user);
             return new ResultDto { IsSuccess = true, Message = "User created successfully" };

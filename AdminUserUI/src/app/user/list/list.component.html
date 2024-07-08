@@ -1,4 +1,20 @@
-<table mat-table [dataSource]="users" class="mat-elevation-z8">
-    <!-- Columns definitions go here -->
-  </table>
-  
+<table matSort (matSortChange)="sortData($event)">
+  <tr>
+    <th mat-sort-header="id">User Id</th>
+    <th mat-sort-header="firstName">FirstName</th>
+    <th mat-sort-header="lastName">LastName</th>
+    <th mat-sort-header="email">Email</th>
+    <th mat-sort-header="role">Role</th>
+    
+  </tr>
+
+  @for (user of sortedData; track user) {
+    <tr>
+      <td>{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.role}}</td>
+    </tr>
+  }
+</table>

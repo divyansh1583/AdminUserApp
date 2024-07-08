@@ -1,56 +1,47 @@
 import { Component } from '@angular/core';
-import { AbstractControl, ValidatorFn } from '@angular/forms';
-import { AuthService } from '../services/auth.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { AdminUserService } from 'src/app/services/admin-user.service';
 
-export const maxAdminsValidator = (authService: AuthService): ValidatorFn => {
-  return (control: AbstractControl): { [key: string]: any } | null => {
-    const role = control.get('role');
-    if (role && role.value === 'Admin') {
-      authService.getAdminCount().subscribe(adminCount => {
-        if (adminCount >= 2) {
-          control.setErrors({ maxAdmins: true });
-        }
-      });
-    }
-    return null;
-  };
-};
-export const passwordMatchValidator: ValidatorFn = (control: AbstractControl): { [key: string]: any } | null => {
-  const password = control.get('password');
-  const confirmPassword = control.get('confirmPassword');
-  return password && confirmPassword && password.value !== confirmPassword.value ? { mismatch: true } : null;
-};
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  registerForm: FormGroup;
+  loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {
-    this.registerForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+  constructor(
+    private fb: FormBuilder, 
+    private adminUserService:AdminUserService, 
+    private router: Router,
+    private toastr:ToastrService
+  ) {
+    this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
-      confirmPassword: ['', Validators.required],
-      role: ['User', Validators.required]
-    }, {
-      validators: [passwordMatchValidator, maxAdminsValidator(this.authService)]
+      password: ['', Validators.required]
     });
   }
 
-  onRegister() {
-    if (this.registerForm.valid) {
-      this.authService.register(this.registerForm.value).subscribe(
-        response => {
-          this.router.navigate(['/login']);
-        },
-        error => {
-          alert('Registration failed');
+  onLogin() {
+    if (this.loginForm.valid) {
+      this.adminUserService.login(this.loginForm.value).subscribe(
+        {
+          next: (result) => {
+            if(result.isSuccess){
+              console.log(result);
+              this.router.navigate(['/user']);
+              this.toastr.success(result.message);
+            }
+            else{
+              console.log(result);
+              this.toastr.error(result.message);
+            }
+          }
         }
       );
     }
   }
+
 }
