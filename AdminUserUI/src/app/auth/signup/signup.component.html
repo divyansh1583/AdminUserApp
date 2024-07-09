@@ -1,56 +1,66 @@
-<form [formGroup]="registerForm" (ngSubmit)="onRegister()"  style="display: grid;height: 100vh;align-items: center;">
-  <mat-card class="container mt-3">
-      <mat-card-header>
-          <mat-card-title>Register Form</mat-card-title>
-          <mat-card-subtitle>Please fill details carefully</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-          <div class="row">
-             <!-- firstname -->
-              <mat-form-field class="col-6">
-                  <input matInput placeholder="First Name" formControlName="firstName">
-                  <mat-error *ngIf="registerForm.get('firstName')?.hasError('required')">First name is required</mat-error>
-              </mat-form-field>
-              <!-- lastname -->
-              <mat-form-field class="col-6">
-                  <input matInput placeholder="Last Name" formControlName="lastName">
-                  <mat-error *ngIf="registerForm.get('lastName')?.hasError('required')">Last name is required</mat-error>
-              </mat-form-field>
-          </div>
+<form [formGroup]="registerForm" (ngSubmit)="onRegister()" style="display: grid;height: 100vh;align-items: center;">
+    <mat-card class="container mt-3">
+        <mat-card-header>
+            <mat-card-title>Register Form</mat-card-title>
+            <mat-card-subtitle>Please fill details carefully</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <!-- firstname -->
+                <mat-form-field class="col-6">
+                    <input matInput placeholder="First Name" formControlName="firstName">
+                    <mat-error *ngIf="getControl('firstName')?.hasError('required')">First name is required</mat-error>
+                </mat-form-field>
+                <!-- lastname -->
+                <mat-form-field class="col-6">
+                    <input matInput placeholder="Last Name" formControlName="lastName">
+                    <mat-error *ngIf="getControl('lastName')?.hasError('required')">Last name is required</mat-error>
+                </mat-form-field>
+            </div>
 
-          <div class="row">
-            <!-- email -->
-              <mat-form-field class="col-6">
-                  <input matInput placeholder="Email" formControlName="email">
-                  <mat-error *ngIf="registerForm.get('email')?.hasError('required')">Email is required</mat-error>
-                  <mat-error *ngIf="registerForm.get('email')?.hasError('email')">Invalid email format</mat-error>
-              </mat-form-field>
-              <!-- password  -->
-              <mat-form-field class="col-6">
-                  <input matInput placeholder="Password" formControlName="password" type="password">
-                  <mat-error *ngIf="registerForm.get('password')?.hasError('required')">Password is required</mat-error>
-                  <mat-error *ngIf="registerForm.get('password')?.errors?.['pattern']">
-                    Password must contain at least 6 characters, one uppercase letter, one lowercase letter, and one number
-                  </mat-error>
-              </mat-form-field>
-          </div>
-          <div class="row">
-            <!-- confirm password  -->
-              <mat-form-field class="col-6">
-                  <input matInput placeholder="Confirm Password" formControlName="confirmPassword" type="password">
-                  <mat-error *ngIf="registerForm.get('confirmPassword')?.hasError('required')">Confirm Password is required</mat-error>
-                  <mat-error *ngIf="registerForm?.hasError('mismatch')">Passwords do not match</mat-error>
-              </mat-form-field>
-          </div>
-          <mat-label>Gender:</mat-label>
-          <mat-radio-group formControlName="role">
-              <mat-radio-button value="User">User</mat-radio-button>
-              <mat-radio-button value="Admin">Admin</mat-radio-button>
-          </mat-radio-group>
-          <!-- <mat-error *ngIf="registerForm?.hasError('maxAdmins')">Cannot register more than 2 admins</mat-error> -->
-      </mat-card-content>
-      <mat-card-actions align="end">
-          <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid">Register</button>
-      </mat-card-actions>
-  </mat-card>
+            <div class="row">
+                <!-- email -->
+                <mat-form-field class="col-6">
+                    <input matInput placeholder="Email" formControlName="email">
+                    <mat-error *ngIf="getControl('email')?.hasError('required')">Email is required</mat-error>
+                    <mat-error *ngIf="getControl('email')?.hasError('email')">Invalid email format</mat-error>
+                </mat-form-field>
+                <!-- role  -->
+                <mat-form-field class="col-6" appearance="outline">
+                    <mat-label>Role</mat-label>
+                    <mat-select formControlName="role">
+                        <mat-option>None</mat-option>
+                        <mat-option value="user">User</mat-option>
+                        <mat-option value="admin">Admin</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="getControl('role')?.hasError('required')">Role is required</mat-error>
+                    <!-- <mat-error *ngIf="registerForm?.hasError('maxAdmins')">Cannot register more than 2 admins</mat-error> -->
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <!-- password  -->
+                <mat-form-field class="col-6">
+                    <input matInput placeholder="Password" formControlName="password" type="password">
+                    <mat-error *ngIf="getControl('password')?.hasError('required')">Password is required</mat-error>
+                    <mat-error *ngIf="getControl('password')?.errors?.['pattern']">
+                        Password must contain at least 6 characters, one uppercase letter, one lowercase letter, and one
+                        number
+                    </mat-error>
+                </mat-form-field>
+                <!-- confirm password  -->
+                <mat-form-field class="col-6">
+                    <input matInput placeholder="Confirm Password" formControlName="confirmPassword" type="password">
+                    <mat-error *ngIf="getControl('confirmPassword')?.hasError('required')">Confirm Password is required</mat-error>
+                    <mat-error *ngIf="getControl('confirmPassword')?.hasError('mismatch')">Passwords do not match</mat-error>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid">Register</button>
+        </mat-card-actions>
+    </mat-card>
+    <div class="container" style="display: flex; justify-content: center; align-items: center; margin: 0px auto;">
+        <span>Already have a account? </span>
+        <a mat-button routerLink="/">Login</a>
+    </div>
 </form>

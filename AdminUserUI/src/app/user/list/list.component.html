@@ -5,16 +5,13 @@
     <th mat-sort-header="lastName">LastName</th>
     <th mat-sort-header="email">Email</th>
     <th mat-sort-header="role">Role</th>
-    
   </tr>
 
-  @for (user of sortedData; track user) {
-    <tr>
-      <td>{{user.id}}</td>
-      <td>{{user.firstName}}</td>
-      <td>{{user.lastName}}</td>
-      <td>{{user.email}}</td>
-      <td>{{user.role}}</td>
-    </tr>
-  }
+  <tr *ngFor="let user of sortedData; track user">
+    <td>{{user.id}}</td>
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.role}}</td>
+  </tr>
 </table>

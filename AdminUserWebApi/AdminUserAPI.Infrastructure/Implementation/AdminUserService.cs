@@ -20,6 +20,7 @@ namespace AdminUserAPI.Infrastructure.Implementation
             _mapper = mapper;
         }
 
+        //register user if all conditions are met
         public async Task<ResultDto> RegisterUserAsync(AdminUserDto adminUserDto)
         {
             if (adminUserDto.Password!=adminUserDto.ConfirmPassword)
@@ -39,16 +40,19 @@ namespace AdminUserAPI.Infrastructure.Implementation
             return new ResultDto { IsSuccess = true, Message = "User created successfully" };
         }
 
+        //loging use if email id and 
         public async Task<ResultDto> LoginUserAsync(UserLoginDto userLoginDto)
         {
             var user = await _adminUserRepository.GetUserByEmailAsync(userLoginDto.Email);
 
-            if (user == null)
+            if (user == null || user.Password!=userLoginDto.Password)
             {
                 return new ResultDto { IsSuccess = false, Message = "Invalid email or password" };
             }
             return new ResultDto { IsSuccess = true, Message = "Login successful" };
         }
+
+        //returning list of users and admin
         public async Task<IEnumerable<AdminUser>> GetUsersAsync()
         {
             return await _adminUserRepository.GetUsersAsync();

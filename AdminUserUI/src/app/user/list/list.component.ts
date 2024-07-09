@@ -1,24 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AdminUserService } from 'src/app/services/admin-user.service';
-import {Sort, MatSortModule} from '@angular/material/sort';
+import { Sort,MatSort } from '@angular/material/sort';
 import { AdminUser } from 'src/app/model/adminUser';
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-  
   users: AdminUser[] = [];
   sortedData: AdminUser[] = [];
-
 
   constructor(private adminUserService: AdminUserService) {
     this.adminUserService.getUsers().subscribe(users => {
       this.users = users;
+      this.sortedData = users.slice();
     });
+  }
+
+
+  ngAfterViewInit() {
     this.sortedData = this.users.slice();
-   }
+  }
 
   sortData(sort: Sort) {
     const data = this.users.slice();
@@ -27,27 +31,26 @@ export class ListComponent {
       return;
     }
 
-    // this.sortedData = data.sort((a, b) => {
-    //   const isAsc = sort.direction === 'asc';
-    //   switch (sort.active) {
-    //     case 'name':
-    //       return compare(a.name, b.name, isAsc);
-    //     case 'calories':
-    //       return compare(a.calories, b.calories, isAsc);
-    //     case 'fat':
-    //       return compare(a.fat, b.fat, isAsc);
-    //     case 'carbs':
-    //       return compare(a.carbs, b.carbs, isAsc);
-    //     case 'protein':
-    //       return compare(a.protein, b.protein, isAsc);
-    //     default:
-    //       return 0;
-    //   }
-    // });
+    this.sortedData = data.sort((a, b) => {
+      const isAsc = sort.direction === 'asc';
+      switch (sort.active) {
+        case 'id':
+          return compare(a.id, b.id, isAsc);
+        case 'firstName':
+          return compare(a.firstName, b.firstName, isAsc);
+        case 'lastName':
+          return compare(a.lastName, b.lastName, isAsc);
+        case 'email':
+          return compare(a.email, b.email, isAsc);
+        case 'role':
+          return compare(a.role, b.role, isAsc);
+        default:
+          return 0;
+      }
+    });
   }
 }
 
 function compare(a: number | string, b: number | string, isAsc: boolean) {
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 }
-

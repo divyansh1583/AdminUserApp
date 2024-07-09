@@ -55,7 +55,9 @@ export class SignupComponent {
       validators: [passwordMatchValidator]
     });
   }
-
+  getControl(value: string) {
+    return this.registerForm.get(value);
+  }
   onRegister() {
     if (this.registerForm.valid) {
       this.adminUserService.register(this.registerForm.value).subscribe(

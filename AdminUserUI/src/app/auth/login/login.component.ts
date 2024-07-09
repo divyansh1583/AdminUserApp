@@ -11,30 +11,33 @@ import { AdminUserService } from 'src/app/services/admin-user.service';
 })
 export class LoginComponent {
   loginForm: FormGroup;
+  hide = true;
 
   constructor(
-    private fb: FormBuilder, 
-    private adminUserService:AdminUserService, 
+    private fb: FormBuilder,
+    private adminUserService: AdminUserService,
     private router: Router,
-    private toastr:ToastrService
+    private toastr: ToastrService
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
   }
-
+  getControl(value: string) {
+    return this.loginForm.get(value);
+  }
   onLogin() {
     if (this.loginForm.valid) {
       this.adminUserService.login(this.loginForm.value).subscribe(
         {
           next: (result) => {
-            if(result.isSuccess){
+            if (result.isSuccess) {
               console.log(result);
               this.router.navigate(['/user']);
               this.toastr.success(result.message);
             }
-            else{
+            else {
               console.log(result);
               this.toastr.error(result.message);
             }
