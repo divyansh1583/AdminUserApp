@@ -10,11 +10,15 @@
                 <mat-form-field class="col-6">
                     <input matInput placeholder="First Name" formControlName="firstName">
                     <mat-error *ngIf="getControl('firstName')?.hasError('required')">First name is required</mat-error>
+                    <mat-error *ngIf="getControl('firstName')?.hasError('maxlength')">Not more than 20
+                        characters</mat-error>
                 </mat-form-field>
                 <!-- lastname -->
                 <mat-form-field class="col-6">
                     <input matInput placeholder="Last Name" formControlName="lastName">
                     <mat-error *ngIf="getControl('lastName')?.hasError('required')">Last name is required</mat-error>
+                    <mat-error *ngIf="getControl('lastName')?.hasError('maxlength')">Not more than 20
+                        characters</mat-error>
                 </mat-form-field>
             </div>
 
@@ -24,6 +28,8 @@
                     <input matInput placeholder="Email" formControlName="email">
                     <mat-error *ngIf="getControl('email')?.hasError('required')">Email is required</mat-error>
                     <mat-error *ngIf="getControl('email')?.hasError('email')">Invalid email format</mat-error>
+                    <mat-error *ngIf="getControl('email')?.hasError('maxlength')">Not more than 20
+                        characters</mat-error>
                 </mat-form-field>
                 <!-- role  -->
                 <mat-form-field class="col-6" appearance="outline">
@@ -40,18 +46,31 @@
             <div class="row">
                 <!-- password  -->
                 <mat-form-field class="col-6">
-                    <input matInput placeholder="Password" formControlName="password" type="password">
+                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password"
+                        formControlName="password" type="password">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" type="button">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
                     <mat-error *ngIf="getControl('password')?.hasError('required')">Password is required</mat-error>
                     <mat-error *ngIf="getControl('password')?.errors?.['pattern']">
                         Password must contain at least 6 characters, one uppercase letter, one lowercase letter, and one
                         number
                     </mat-error>
+                    <mat-error *ngIf="getControl('password')?.hasError('maxlength')">Not more than 20
+                        characters</mat-error>
+
                 </mat-form-field>
                 <!-- confirm password  -->
                 <mat-form-field class="col-6">
-                    <input matInput placeholder="Confirm Password" formControlName="confirmPassword" type="password">
-                    <mat-error *ngIf="getControl('confirmPassword')?.hasError('required')">Confirm Password is required</mat-error>
-                    <mat-error *ngIf="getControl('confirmPassword')?.hasError('mismatch')">Passwords do not match</mat-error>
+                    <input matInput [type]="hide1 ? 'password' : 'text'" placeholder="Confirm Password"
+                        formControlName="confirmPassword" type="password">
+                    <button mat-icon-button matSuffix (click)="hide1 = !hide1" type="button">
+                        <mat-icon>{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="getControl('confirmPassword')?.hasError('required')">Confirm Password is
+                        required</mat-error>
+                    <mat-error *ngIf="getControl('confirmPassword')?.hasError('mismatch')">Passwords do not
+                        match</mat-error>
                 </mat-form-field>
             </div>
         </mat-card-content>
@@ -59,8 +78,8 @@
             <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid">Register</button>
         </mat-card-actions>
     </mat-card>
-    <div class="container" style="display: flex; justify-content: center; align-items: center; margin: 0px auto;">
-        <span>Already have a account? </span>
-        <a mat-button routerLink="/">Login</a>
-    </div>
 </form>
+<div class="container" style="display: flex; justify-content: center; align-items: center; margin: 0px auto;">
+    <span>Already have a account? </span>
+    <a mat-button routerLink="/">Login</a>
+</div>

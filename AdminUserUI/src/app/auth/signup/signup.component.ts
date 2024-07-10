@@ -26,7 +26,7 @@ export const passwordMatchValidator: ValidatorFn = (control: AbstractControl): {
     return { mismatch: true };
   }
   else {
-    control.get('confirmPassword')?.setErrors(null);
+    control.setErrors({ mismatch: null });
   }
   return null;
 };
@@ -37,6 +37,8 @@ export const passwordMatchValidator: ValidatorFn = (control: AbstractControl): {
 })
 export class SignupComponent {
   registerForm: FormGroup;
+  hide = true;
+  hide1 = true;
 
   constructor(
     private fb: FormBuilder,
@@ -45,12 +47,12 @@ export class SignupComponent {
     private toastr: ToastrService
   ) {
     this.registerForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.pattern(/^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\D*\d)(?=.*[$@$!%*?&]).{6,}$/)]],
+      firstName: ['', [Validators.required, Validators.maxLength(20)]],
+      lastName: ['', [Validators.required, Validators.maxLength(20)]],
+      email: ['', [Validators.required, Validators.email, Validators.maxLength(20)]],
+      password: ['', [Validators.required, Validators.pattern(/^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\D*\d)(?=.*[$@$!%*?&]).{6,}$/), Validators.maxLength(20)]],
       confirmPassword: ['', Validators.required],
-      role: ['User', Validators.required]
+      role: [null, Validators.required]
     }, {
       validators: [passwordMatchValidator]
     });

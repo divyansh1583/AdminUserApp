@@ -9,6 +9,12 @@ import { AdminUser } from 'src/app/model/adminUser';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
+deleteUser(arg0: number) {
+throw new Error('Method not implemented.');
+}
+EditUser(_t30: AdminUser) {
+throw new Error('Method not implemented.');
+}
   users: AdminUser[] = [];
   sortedData: AdminUser[] = [];
 
