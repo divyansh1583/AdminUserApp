@@ -23,6 +23,7 @@ export class ListComponent {
     private toastr: ToastrService,
     private cdr: ChangeDetectorRef
   ) { }
+
   ngOnInit(): void {
     this.loadUsers();
   }
@@ -30,23 +31,21 @@ export class ListComponent {
   loadUsers() {
     this.adminUserService.getUsers().subscribe(res => {
       this.users = res;
-      // this.sortedData = this.users.slice();
-      // this.sortedData=res;
+      this.sortedData = this.users.slice();
+      this.cdr.detectChanges();
     });
   }
 
   deleteUser(courseId: number) {
     var dialogRef = this.dialog.open(this.deleteDialog!);
-    dialogRef.afterClosed().subscribe(
-      result => {
-        if (result) {
-          this.adminUserService.deleteUser(courseId).subscribe(() => {
-            this.loadUsers();
-            this.toastr.success("Course Delete successfully");
-          });
-        }
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.adminUserService.deleteUser(courseId).subscribe(() => {
+          this.toastr.success("User deleted successfully");
+          this.loadUsers();
+        });
       }
-    );
+    });
   }
 
   editUser(adminUser: AdminUser) {
@@ -58,15 +57,13 @@ export class ListComponent {
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.loadUsers();
-        console.log(this.users);    
       }
     });
   }
 
-
-
   ngAfterViewInit() {
     this.sortedData = this.users.slice();
+    this.cdr.detectChanges();
   }
 
   sortData(sort: Sort) {

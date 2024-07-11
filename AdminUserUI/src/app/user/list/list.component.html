@@ -6,7 +6,6 @@
   <div *ngIf="users.length === 0">
     <p class="text-primary lead my-3">No Record!</p>
   </div>
-
 </div>
 
 <!-- if there are users -->
@@ -25,14 +24,14 @@
         </tr>
       </thead>
       <tbody class="text-center">
-        <tr *ngFor="let user of users">
+        <tr *ngFor="let user of sortedData">
           <td>{{user.id}}</td>
           <td>{{user.firstName}}</td>
           <td>{{user.lastName}}</td>
           <td>{{user.email}}</td>
           <td>{{user.role}}</td>
           <td>
-            <button mat-icon-button (click)="editUser (user)"><mat-icon>edit</mat-icon></button>
+            <button mat-icon-button (click)="editUser(user)"><mat-icon>edit</mat-icon></button>
             <button mat-icon-button color="warn" (click)="deleteUser(user.id)"><mat-icon>delete</mat-icon></button>
           </td>
         </tr>
@@ -50,3 +49,4 @@
       <button mat-button color="warn" (click)="dialog.close(true)">Delete</button>
     </div>
   </ng-template>
+</div>

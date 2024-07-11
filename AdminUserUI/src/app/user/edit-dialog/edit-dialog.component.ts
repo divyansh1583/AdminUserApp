@@ -48,7 +48,7 @@ export class EditDialogComponent {
         }
         else{
           this.toastr.error(res.message);
-          this.dialogRef.close();
+          this.dialogRef.close(false);
         }
       });
     }
