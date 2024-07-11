@@ -1,7 +1,23 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A8B8872-7A70-4282-9FFF-25C7453EE457}|..\\AdminUserAPI.Infrastructure\\AdminUserAPI.Infrastructure.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.infrastructure\\implementation\\adminuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A8B8872-7A70-4282-9FFF-25C7453EE457}|..\\AdminUserAPI.Infrastructure\\AdminUserAPI.Infrastructure.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.infrastructure\\implementation\\adminuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.core\\interfaces\\iadminuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.core\\interfaces\\iadminuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -14,22 +30,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.core\\dtos\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B0AD21-4E97-4AD7-B326-8A6FC200272C}|AdminUserAPI.csproj|solutionrelative:controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.core\\interfaces\\iadminuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D70021AA-05C8-406A-98B9-9BA61256E874}|..\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.core\\interfaces\\iadminuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A8B8872-7A70-4282-9FFF-25C7453EE457}|..\\AdminUserAPI.Infrastructure\\AdminUserAPI.Infrastructure.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.infrastructure\\implementation\\adminuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A8B8872-7A70-4282-9FFF-25C7453EE457}|..\\AdminUserAPI.Infrastructure\\AdminUserAPI.Infrastructure.csproj|c:\\users\\divyansh.chauhan\\desktop\\dc\\angular\u002B.net\u002Bmssql\\adminuserapp\\adminuserwebapi\\adminuserapi.infrastructure\\implementation\\adminuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,15 +39,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -56,104 +56,101 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "UserLoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\DTOs\\UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\DTOs\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\DTOs\\UserLoginDto.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\DTOs\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\DTOs\\UserLoginDto.cs",
               "RelativeToolTip": "..\\AdminUserAPI.Core\\DTOs\\UserLoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T09:58:49.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T09:58:49.213Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AdminUserController.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI\\Controllers\\AdminUserController.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI\\Controllers\\AdminUserController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminUserController.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI\\Controllers\\AdminUserController.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI\\Controllers\\AdminUserController.cs",
               "RelativeToolTip": "Controllers\\AdminUserController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wB4AAAAJAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwDoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T09:54:49.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "IAdminUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
               "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
               "RelativeToolTip": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwBMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T09:51:47.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "IAdminUserService.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
               "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
               "RelativeToolTip": "..\\AdminUserAPI.Core\\Interfaces\\IAdminUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T09:49:53.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "AdminUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
               "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
               "RelativeToolTip": "..\\AdminUserAPI.Core\\DTOs\\AdminUserDto.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAwwBQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T04:24:10.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResultDto.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
-              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
-              "RelativeToolTip": "..\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T09:47:02.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T04:24:10.61Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "RelativeDocumentMoniker": "..\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "RelativeToolTip": "..\\AdminUserAPI.Core\\DTOs\\ResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T09:47:02.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AdminUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserRepository.cs",
               "RelativeDocumentMoniker": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserRepository.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserRepository.cs",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserRepository.cs",
               "RelativeToolTip": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBEAAAAYAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwEQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T09:43:35.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "AdminUserService.cs",
-              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
+              "DocumentMoniker": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
               "RelativeDocumentMoniker": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
-              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
-              "RelativeToolTip": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowDcAAABBAAAA",
+              "ToolTip": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular\u002B.NET\u002BMSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs*",
+              "RelativeToolTip": "..\\AdminUserAPI.Infrastructure\\Implementation\\AdminUserService.cs*",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwB4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T09:38:06.124Z",
               "EditorCaption": ""

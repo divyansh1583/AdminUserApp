@@ -1,4 +1,5 @@
-﻿using System;
+﻿// IAdminUserRepository.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,7 @@ namespace AdminUserAPI.Core.Interfaces
         Task AddUserAsync(AdminUser user);
         Task<int> GetAdminCountAsync();
         Task<IEnumerable<AdminUser>> GetUsersAsync();
+        Task UpdateUserAsync(AdminUser user);
+        Task DeleteUserAsync(int id);
     }
 }

@@ -1,0 +1,42 @@
+<h2 mat-dialog-title>Edit User</h2>
+<mat-dialog-content>
+    <form [formGroup]="editForm">
+        <div class="row">
+            <mat-form-field class="col">
+                <mat-label>Firstname</mat-label>
+
+                <input matInput placeholder="First Name" formControlName="firstName">
+                <mat-error *ngIf="getControl('firstName')?.hasError('required')">First name is required</mat-error>
+                <mat-error *ngIf="getControl('firstName')?.hasError('maxlength')">Not more than 20 characters</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col">
+                <mat-label>Lastname</mat-label>
+                <input matInput placeholder="Last Name" formControlName="lastName">
+                <mat-error *ngIf="getControl('lastName')?.hasError('required')">Last name is required</mat-error>
+                <mat-error *ngIf="getControl('lastName')?.hasError('maxlength')">Not more than 20 characters</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="col">
+                <mat-label>Email</mat-label>    
+                <input matInput placeholder="Email" formControlName="email">
+                <mat-error *ngIf="getControl('email')?.hasError('required')">Email is required</mat-error>
+                <mat-error *ngIf="getControl('email')?.hasError('email')">Invalid email format</mat-error>
+                <mat-error *ngIf="getControl('email')?.hasError('maxlength')">Not more than 20 characters</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col">
+                <mat-label>Role</mat-label>
+                <mat-select formControlName="role">
+                    <mat-option>None</mat-option>
+                    <mat-option value="user">User</mat-option>
+                    <mat-option value="admin">Admin</mat-option>
+                </mat-select>
+                <mat-error *ngIf="getControl('role')?.hasError('required')">Role is required</mat-error>
+            </mat-form-field>
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button [mat-dialog-close]="true">Cancel</button>
+    <button mat-button [mat-dialog-close]="true" [disabled]="editForm.invalid" (click)="onEdit()">Edit</button>
+</mat-dialog-actions>

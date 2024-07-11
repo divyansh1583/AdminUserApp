@@ -1,4 +1,5 @@
-﻿using System;
+﻿// AdminUserService.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,10 @@ using AutoMapper;
 namespace AdminUserAPI.Infrastructure.Implementation
 {
     public class AdminUserService : IAdminUserService
-    {   
+    {
         private readonly IAdminUserRepository _adminUserRepository;
         private readonly IMapper _mapper;
-        public AdminUserService( IAdminUserRepository adminUserRepository,IMapper mapper)
+        public AdminUserService(IAdminUserRepository adminUserRepository, IMapper mapper)
         {
             _adminUserRepository = adminUserRepository;
             _mapper = mapper;
@@ -23,15 +24,15 @@ namespace AdminUserAPI.Infrastructure.Implementation
         //register user if all conditions are met
         public async Task<ResultDto> RegisterUserAsync(AdminUserDto adminUserDto)
         {
-            if (adminUserDto.Password!=adminUserDto.ConfirmPassword)
+            if (adminUserDto.Password != adminUserDto.ConfirmPassword)
             {
                 return new ResultDto { IsSuccess = false, Message = "Passwords do not match" };
             }
-            if (adminUserDto.Role=="Admin" && await _adminUserRepository.GetAdminCountAsync()>=2)
+            if (adminUserDto.Role == "admin" && await _adminUserRepository.GetAdminCountAsync() >= 2)
             {
                 return new ResultDto { IsSuccess = false, Message = "Cannot register more than 2 admins" };
             }
-            if (await _adminUserRepository.GetUserByEmailAsync(adminUserDto.Email)!=null)
+            if (await _adminUserRepository.GetUserByEmailAsync(adminUserDto.Email) != null)
             {
                 return new ResultDto { IsSuccess = false, Message = "This email is already registered!" };
             }
@@ -45,7 +46,7 @@ namespace AdminUserAPI.Infrastructure.Implementation
         {
             var user = await _adminUserRepository.GetUserByEmailAsync(userLoginDto.Email);
 
-            if (user == null || user.Password!=userLoginDto.Password)
+            if (user == null || user.Password != userLoginDto.Password)
             {
                 return new ResultDto { IsSuccess = false, Message = "Invalid email or password" };
             }
@@ -58,5 +59,31 @@ namespace AdminUserAPI.Infrastructure.Implementation
             return await _adminUserRepository.GetUsersAsync();
         }
 
+        //update user
+        public async Task<ResultDto> UpdateUserAsync(AdminUserDto userUpdateDto)
+        {
+            var user = await _adminUserRepository.GetUserByEmailAsync(userUpdateDto.Email);
+
+            if (user == null)
+            {
+                return new ResultDto { IsSuccess = false, Message = "User not found" };
+            }
+
+            user.FirstName = userUpdateDto.FirstName;
+            user.LastName = userUpdateDto.LastName;
+            user.Role = userUpdateDto.Role;
+
+            await _adminUserRepository.UpdateUserAsync(user);
+
+            return new ResultDto { IsSuccess = true, Message = "User updated successfully" };
+        }
+
+        //delete user
+        public async Task<ResultDto> DeleteUserAsync(int id)
+        {
+            await _adminUserRepository.DeleteUserAsync(id);
+
+            return new ResultDto { IsSuccess = true, Message = "User deleted successfully" };
+        }
     }
 }

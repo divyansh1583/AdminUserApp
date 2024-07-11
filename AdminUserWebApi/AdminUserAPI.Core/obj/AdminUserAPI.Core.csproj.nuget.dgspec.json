@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj": {}
+    "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj": {
+    "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj",
+        "projectUniqueName": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj",
         "projectName": "AdminUserAPI.Core",
-        "projectPath": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj",
+        "projectPath": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebAPI\\AdminUserAPI.Core\\AdminUserAPI.Core.csproj",
         "packagesPath": "C:\\Users\\divyansh.chauhan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\divyansh.chauhan\\Desktop\\DC\\Angular+.NET+MSSQL\\AdminUserApp\\AdminUserWebApi\\AdminUserAPI.Core\\obj\\",
         "projectStyle": "PackageReference",

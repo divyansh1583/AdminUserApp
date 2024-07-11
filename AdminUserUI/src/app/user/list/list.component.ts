@@ -1,7 +1,10 @@
-import { Component, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, TemplateRef, ViewChild } from '@angular/core';
 import { AdminUserService } from 'src/app/services/admin-user.service';
-import { Sort,MatSort } from '@angular/material/sort';
+import { Sort, MatSort } from '@angular/material/sort';
 import { AdminUser } from 'src/app/model/adminUser';
+import { MatDialog } from '@angular/material/dialog';
+import { EditDialogComponent } from '../edit-dialog/edit-dialog.component';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-list',
@@ -9,21 +12,57 @@ import { AdminUser } from 'src/app/model/adminUser';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-deleteUser(arg0: number) {
-throw new Error('Method not implemented.');
-}
-EditUser(_t30: AdminUser) {
-throw new Error('Method not implemented.');
-}
+  @ViewChild('deleteDialog') deleteDialog!: TemplateRef<any>;
+
   users: AdminUser[] = [];
   sortedData: AdminUser[] = [];
 
-  constructor(private adminUserService: AdminUserService) {
-    this.adminUserService.getUsers().subscribe(users => {
-      this.users = users;
-      this.sortedData = users.slice();
+  constructor(
+    private adminUserService: AdminUserService,
+    public dialog: MatDialog,
+    private toastr: ToastrService,
+    private cdr: ChangeDetectorRef
+  ) { }
+  ngOnInit(): void {
+    this.loadUsers();
+  }
+
+  loadUsers() {
+    this.adminUserService.getUsers().subscribe(res => {
+      this.users = res;
+      // this.sortedData = this.users.slice();
+      // this.sortedData=res;
     });
   }
+
+  deleteUser(courseId: number) {
+    var dialogRef = this.dialog.open(this.deleteDialog!);
+    dialogRef.afterClosed().subscribe(
+      result => {
+        if (result) {
+          this.adminUserService.deleteUser(courseId).subscribe(() => {
+            this.loadUsers();
+            this.toastr.success("Course Delete successfully");
+          });
+        }
+      }
+    );
+  }
+
+  editUser(adminUser: AdminUser) {
+    const dialogRef = this.dialog.open(EditDialogComponent, {
+      width: '500px',
+      data: adminUser
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.loadUsers();
+        console.log(this.users);    
+      }
+    });
+  }
+
 
 
   ngAfterViewInit() {

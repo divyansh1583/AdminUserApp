@@ -25,14 +25,14 @@
         </tr>
       </thead>
       <tbody class="text-center">
-        <tr *ngFor="let user of sortedData">
+        <tr *ngFor="let user of users">
           <td>{{user.id}}</td>
           <td>{{user.firstName}}</td>
           <td>{{user.lastName}}</td>
           <td>{{user.email}}</td>
           <td>{{user.role}}</td>
           <td>
-            <button mat-icon-button (click)="EditUser(user)"><mat-icon>edit</mat-icon></button>
+            <button mat-icon-button (click)="editUser (user)"><mat-icon>edit</mat-icon></button>
             <button mat-icon-button color="warn" (click)="deleteUser(user.id)"><mat-icon>delete</mat-icon></button>
           </td>
         </tr>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿// IAdminUserService.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace AdminUserAPI.Core.Interfaces
         Task<ResultDto> RegisterUserAsync(AdminUserDto userCreateDto);
         Task<ResultDto> LoginUserAsync(UserLoginDto userLoginDto);
         Task<IEnumerable<AdminUser>> GetUsersAsync();
-
+        Task<ResultDto> UpdateUserAsync(AdminUserDto userUpdateDto);
+        Task<ResultDto> DeleteUserAsync(int id);
     }
 }
