@@ -1,6 +1,6 @@
 <div class="text-center my-3">
   <!-- Add button -->
-  <button mat-raised-button color="primary" routerLink="/signup">Add User</button>
+  <button mat-raised-button color="primary" (click)="addUser()">Add User</button>
 
   <!-- If 0 users -->
   <div *ngIf="users.length === 0">

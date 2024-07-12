@@ -5,6 +5,7 @@ import { AdminUser } from 'src/app/model/adminUser';
 import { MatDialog } from '@angular/material/dialog';
 import { EditDialogComponent } from '../edit-dialog/edit-dialog.component';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -13,21 +14,22 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ListComponent {
   @ViewChild('deleteDialog') deleteDialog!: TemplateRef<any>;
-
+  
   users: AdminUser[] = [];
   sortedData: AdminUser[] = [];
-
+  
   constructor(
     private adminUserService: AdminUserService,
     public dialog: MatDialog,
     private toastr: ToastrService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private router:Router
   ) { }
-
+  
   ngOnInit(): void {
     this.loadUsers();
   }
-
+  
   loadUsers() {
     this.adminUserService.getUsers().subscribe(res => {
       this.users = res;
@@ -35,7 +37,11 @@ export class ListComponent {
       this.cdr.detectChanges();
     });
   }
-
+  
+  addUser() {
+    localStorage.removeItem('login_token');
+    this.router.navigate(['/signup']);
+  }
   deleteUser(courseId: number) {
     var dialogRef = this.dialog.open(this.deleteDialog!);
     dialogRef.afterClosed().subscribe(result => {

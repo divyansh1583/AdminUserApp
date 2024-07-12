@@ -34,6 +34,7 @@ export class LoginComponent {
           next: (result) => {
             if (result.isSuccess) {
               console.log(result);
+              localStorage.setItem('login_token','token');
               this.router.navigate(['/user']);
               this.toastr.success(result.message);
             }
