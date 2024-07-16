@@ -14,22 +14,22 @@ import { Router } from '@angular/router';
 })
 export class ListComponent {
   @ViewChild('deleteDialog') deleteDialog!: TemplateRef<any>;
-  
+
   users: AdminUser[] = [];
   sortedData: AdminUser[] = [];
-  
+
   constructor(
     private adminUserService: AdminUserService,
     public dialog: MatDialog,
     private toastr: ToastrService,
     private cdr: ChangeDetectorRef,
-    private router:Router
+    private router: Router
   ) { }
-  
+
   ngOnInit(): void {
     this.loadUsers();
   }
-  
+
   loadUsers() {
     this.adminUserService.getUsers().subscribe(res => {
       this.users = res;
@@ -37,35 +37,36 @@ export class ListComponent {
       this.cdr.detectChanges();
     });
   }
-  
+
   addUser() {
     localStorage.removeItem('login_token');
     this.router.navigate(['/signup']);
   }
-  deleteUser(courseId: number) {
-    var dialogRef = this.dialog.open(this.deleteDialog!);
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) {
-        this.adminUserService.deleteUser(courseId).subscribe(() => {
-          this.toastr.success("User deleted successfully");
-          this.loadUsers();
-        });
-      }
-    });
-  }
 
   editUser(adminUser: AdminUser) {
     const dialogRef = this.dialog.open(EditDialogComponent, {
-      width: '500px',
       data: adminUser
     });
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
         this.loadUsers();
+        this.cdr.detectChanges();
       }
     });
   }
+  deleteUser(courseId: number) {
+    var dialogRef = this.dialog.open(this.deleteDialog!);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.adminUserService.deleteUser(courseId).subscribe(() => {
+          this.loadUsers();
+          this.toastr.success("User deleted successfully");
+        });
+      }
+    });
+  }
+
 
   ngAfterViewInit() {
     this.sortedData = this.users.slice();
